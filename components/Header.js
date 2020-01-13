@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => (
   <div>
-    <h1>Kjøp Bilforsikring</h1>
+    <h1 className="title">Kjøp Bilforsikring</h1>
     <p>
       Det er fire forskjellige forsikringer å velge mellom.
       Ansvarsforsikring er lovpålagt om kjøretøyet er registrert og

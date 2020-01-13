@@ -1,6 +1,7 @@
 * TODO i18n
 * TODO Personal number validation
 * TODO Reg nr validation
+* TODO Group name inputs
 * TODO State management?
 * DONE Input components
 * DONE Setup repo

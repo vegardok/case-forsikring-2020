@@ -2,10 +2,14 @@ import React from 'react';
 
 // TODO: client side validation
 const PersonalNumberInput = () => (
-  <label>
-    Fødselsnummer
-    <input placeholder="11 siffer" />
-  </label>
+  <div className="field">
+    <label className="label">
+      <div className="control">
+        Fødselsnummer
+        <input className="input" placeholder="11 siffer" />
+      </div>
+    </label>
+  </div>
 );
 
 export default PersonalNumberInput;

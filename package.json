@@ -12,8 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
+    "bulma": "^0.8.0",
     "next": "^9.1.7",
-    "normalize.css": "^8.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },

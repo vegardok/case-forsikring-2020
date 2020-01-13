@@ -8,12 +8,12 @@ import EmailInput from '../components/EmailInput.js';
 
 const InsuranceForm = () => (
   <form>
-    <div><RegNrInput /></div>
-    <div><BonusSelector /></div>
-    <div><PersonalNumberInput /></div>
-    <div><FirstNameInput/></div>
-    <div><LastNameInput/></div>
-    <div><EmailInput/></div>
+    <RegNrInput />
+    <BonusSelector />
+    <PersonalNumberInput />
+    <FirstNameInput/>
+    <LastNameInput/>
+    <EmailInput/>
   </form>
 );
 

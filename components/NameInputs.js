@@ -1,15 +1,23 @@
 import React from 'react';
 
 export const FirstNameInput = () => (
-  <label>
-    Fornavn
-    <input placeholder="placeholder" />
-  </label>
+  <div className="field">
+    <label className="label">
+      <div className="control">
+        Fornavn
+        <input className="input" placeholder="placeholder" />
+      </div>
+    </label>
+  </div>
 );
 
 export const LastNameInput = () => (
-  <label>
-    Etternavn
-    <input placeholder="placeholder" />
-  </label>
+  <div className="field">
+    <label className="label">
+      <div className="control">
+        Etternavn
+        <input className="input" placeholder="placeholder" />
+      </div>
+    </label>
+  </div>
 );
