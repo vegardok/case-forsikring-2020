@@ -46,13 +46,13 @@ const RegNrInput = ({
       <div className="control">
         Bilens registreringsnummer
         <input className={['input',
-                           showValidation &&
+          showValidation &&
                            (valid ? 'is-success' : 'is-danger')].join(' ')}
-               type="text"
-               placeholder="e.g. AB12345"
-               value={value}
-               onBlur={() => toggleInputInteraction()}
-               onChange={(e) => changeInput(e.target.value)}
+        type="text"
+        placeholder="e.g. AB12345"
+        value={value}
+        onBlur={() => toggleInputInteraction()}
+        onChange={(e) => changeInput(e.target.value)}
         />
       </div>
     </label>
