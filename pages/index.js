@@ -4,6 +4,7 @@ import RegNrInput from '../components/RegNrInput.js';
 import BonusSelector from '../components/BonusSelector.js';
 import PersonalNumberInput from '../components/PersonalNumberInput.js';
 import {FirstNameInput, LastNameInput} from '../components/NameInputs.js';
+import EmailInput from '../components/EmailInput.js';
 
 const Index = () => (
   <>
@@ -14,6 +15,7 @@ const Index = () => (
       <PersonalNumberInput />
       <FirstNameInput/>
       <LastNameInput/>
+      <EmailInput/>
     </form>
   </>
 );

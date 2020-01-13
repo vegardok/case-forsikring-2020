@@ -2,6 +2,6 @@
 * TODO Personal number validation
 * TODO Reg nr validation
 * TODO State management?
-* WORKING Input components
+* DONE Input components
 * DONE Setup repo
 * DONE Setup project
