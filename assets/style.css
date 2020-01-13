@@ -1,0 +1,12 @@
+font-face {
+  font-family: "Fremtind Grotesk";
+  font-display: fallback;
+  font-weight: normal;
+  font-style: normal;
+  /* TODO: woff static file serving */
+  src: local("Fremtind Grotesk"), url("https://github.com/fremtind/jokul/raw/master/packages/webfonts/fonts/FremtindGrotesk-Regular-Web.woff2") format("woff2"), url("https://github.com/fremtind/jokul/raw/master/packages/webfonts/fonts/FremtindGrotesk-Regular-Web.woff") format("woff");
+}
+
+body {
+  font-family: 'Fremtind Grotesk', sans-serif;
+}
