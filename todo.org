@@ -1,0 +1,6 @@
+* TODO i18n
+* TODO Reg nr validation
+* TODO State management?
+* WORKING Input components
+* DONE Setup repo
+* DONE Setup project
