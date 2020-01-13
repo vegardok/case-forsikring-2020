@@ -1,8 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-const INPUT_INTERACTION = 'INPUT_INTERACTION';
-const INPUT_CHANGE = 'INPUT_CHANGE';
+const INPUT_INTERACTION = 'RegNr/INPUT_INTERACTION';
+const INPUT_CHANGE = 'RegNr/INPUT_CHANGE';
 
 const toggleInputInteraction = () => ({
   type: INPUT_INTERACTION,
@@ -31,8 +31,6 @@ export const reducer = (previousState = defaultState, action) => {
     }
   }
 };
-
-// TODO: reg nr validation client or server side?
 
 const RegNrInput = ({
   value,

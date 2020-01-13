@@ -10,3 +10,8 @@ font-face {
 body {
   font-family: 'Fremtind Grotesk', sans-serif;
 }
+
+.is-danger.input:focus{
+  box-shadow: none;
+  border-color: #dbdbdb;
+}
