@@ -4,6 +4,7 @@ import {reducer as bonus} from './BonusSelector';
 import {reducer as pn} from './PersonalNumberInput';
 import {reducer as name} from './NameInputs';
 import {reducer as email} from './EmailInput';
+import {reducer as form} from './InsuranceForm';
 
 export default combineReducers({
   regNr,
@@ -11,4 +12,5 @@ export default combineReducers({
   pn,
   name,
   email,
+  form,
 });
