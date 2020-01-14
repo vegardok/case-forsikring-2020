@@ -46,7 +46,7 @@ const EmailInput = ({
         Epost
         <input
           className={['input',
-                      showValidation &&
+            showValidation &&
                       (valid ? 'is-success' : 'is-danger')].join(' ')}
           value={value}
           onBlur={() => toggleInputInteraction()}

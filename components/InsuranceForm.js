@@ -2,7 +2,7 @@ import React from 'react';
 import RegNrInput from '../components/RegNrInput';
 import BonusSelector from '../components/BonusSelector';
 import PersonalNumberInput from '../components/PersonalNumberInput';
-import {FirstNameInput, LastNameInput} from '../components/NameInputs';
+import NameInput from '../components/NameInputs';
 import EmailInput from '../components/EmailInput';
 
 
@@ -11,9 +11,8 @@ const InsuranceForm = () => (
     <RegNrInput />
     <BonusSelector />
     <PersonalNumberInput />
-    <FirstNameInput/>
-    <LastNameInput/>
-    <EmailInput/>
+    <NameInput />
+    <EmailInput />
   </form>
 );
 
