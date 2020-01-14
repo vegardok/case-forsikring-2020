@@ -27,7 +27,7 @@ const BonusSelector = ({
   bonus,
   changeInput,
 }) => (
-  <div className="field">
+  <div className="field medium-margin-top">
     <label className="label">
       Din bonus
       <div className="control">

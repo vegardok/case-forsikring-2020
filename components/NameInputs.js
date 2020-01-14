@@ -37,7 +37,7 @@ const LastNameInput_ = ({
   lastName,
   changeName,
 }) => (
-  <div className="field is-grouped">
+  <div className="field is-grouped medium-margin-top">
     <label className="label">
       <div className="control">
         Fornavn

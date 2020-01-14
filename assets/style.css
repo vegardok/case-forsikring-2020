@@ -15,3 +15,21 @@ body {
   box-shadow: none;
   border-color: #dbdbdb;
 }
+
+@media screen and (max-width: 768px) {
+  .very-large-margin-top {
+    margin-top: 120px;
+  }
+
+  .large-margin-top {
+    margin-top: 96px;
+  }
+
+  .medium-margin-top {
+    margin-top: 72px;
+  }
+
+  .small-margin-top {
+    margin-top: 48px;
+  }
+}

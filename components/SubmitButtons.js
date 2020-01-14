@@ -27,14 +27,14 @@ export const reducer = (previousState = defaultState, action) => {
 const FormButtons = ({
   enabled,
 }) => (
-  <div className="field is-grouped">
+  <div className="field is-grouped very-large-margin-top">
     <div className="control">
       <button className="button is-link" disabled={!enabled}>
         Beregn pris
       </button>
     </div>
     <div className="control">
-      <button className="button is-link is-light">
+      <button className="button is-link is-light" disabled={true}>
         Avbryt
       </button>
     </div>

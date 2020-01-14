@@ -3,6 +3,8 @@ Simple case for a job interview
 
 * Backlog
 ** TODO i18n
+** TODO Invalid input user feedback
+** TODO Break name input over two lines in mobile mode
 ** TODO Derived state setup
 ** DONE Personal number validation
 ** DONE Reg nr validation

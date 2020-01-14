@@ -49,7 +49,7 @@ const EmailInput = ({
   valid,
   showValidation,
 }) => (
-  <div className="field">
+  <div className="field medium-margin-top">
     <label className="label">
       <div className="control">
         Epost

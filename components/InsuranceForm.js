@@ -35,7 +35,7 @@ const InsuranceForm = ({
   onSubmit,
 }) => submitted ? (
   <>
-    <h1 className="title">Tilbud bilforsikring</h1>
+    <h2 className="title">Tilbud bilforsikring</h2>
     <p>
       {parseInt(Math.random()* 1000, 10)} kr
     </p>

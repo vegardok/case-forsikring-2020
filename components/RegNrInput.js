@@ -44,7 +44,7 @@ const RegNrInput = ({
   valid,
   showValidation,
 }) => (
-  <div className="field">
+  <div className="field large-margin-top">
     <label className="label">
       <div className="control">
         Bilens registreringsnummer
