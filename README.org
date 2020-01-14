@@ -1,0 +1,13 @@
+* About
+Simple case for a job interview
+
+* Backlog
+** TODO i18n
+** TODO Derived state setup
+** DONE Personal number validation
+** DONE Reg nr validation
+** DONE Group name inputs
+** DONE State management?
+** DONE Input components
+** DONE Setup repo
+** DONE Setup project
