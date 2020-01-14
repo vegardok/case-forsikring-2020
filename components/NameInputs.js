@@ -13,12 +13,18 @@ const changeName = (name, key) => ({
 const defaultState = {
   firstName: '',
   lastName: '',
+  firstNameValid: false,
+  lastNameValid: false,
 };
 
 export const reducer = (previousState = defaultState, action) => {
   switch (action.type) {
     case CHANGE: {
-      return {...previousState, [action.key]: action.value};
+      return {
+        ...previousState,
+        [action.key]: action.value,
+        [`${action.key}Valid`]: action.value.length >= 2,
+      };
     }
     default: {
       return previousState;

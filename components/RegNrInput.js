@@ -16,6 +16,7 @@ const changeInput = (regNr) => ({
 const defaultState = {
   interactedWith: false,
   regNr: '',
+  valid: false,
 };
 
 export const reducer = (previousState = defaultState, action) => {
@@ -24,7 +25,11 @@ export const reducer = (previousState = defaultState, action) => {
       return {...previousState, interactedWith: true};
     }
     case INPUT_CHANGE: {
-      return {...previousState, regNr: action.value};
+      return {
+        ...previousState,
+        regNr: action.value,
+        valid: /^[a-zA-Z]{2,2}[\d]{5,5}$/.test(action.value),
+      };
     }
     default: {
       return previousState;
@@ -59,7 +64,7 @@ const RegNrInput = ({
 
 const mapStateToProps = (state, ownProps) => ({
   value: state.regNr.regNr,
-  valid: /^[a-zA-Z]{2,2}[\d]{5,5}$/.test(state.regNr.regNr),
+  valid: state.regNr.valid,
   showValidation: state.regNr.interactedWith && state.regNr.regNr.length > 0,
 });
 

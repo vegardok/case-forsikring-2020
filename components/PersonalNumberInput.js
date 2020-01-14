@@ -5,8 +5,9 @@ const INPUT_CHANGE = 'PersonalNumber/CHANGE';
 const INPUT_INTERACTION = 'PersonalNumber/INTERACTION';
 
 const defaultState = {
-  nr: undefined,
+  nr: '',
   interactedWith: false,
+  valid: false,
 };
 
 export const reducer = (previousState = defaultState, action) => {
@@ -15,7 +16,11 @@ export const reducer = (previousState = defaultState, action) => {
       return {...previousState, interactedWith: true};
     }
     case INPUT_CHANGE: {
-      return {...previousState, nr: action.value};
+      return {
+        ...previousState,
+        nr: action.value,
+        valid: /^[\d]{11,11}$/.test(action.value),
+      };
     }
     default: {
       return previousState;
@@ -27,9 +32,9 @@ const toggleInputInteraction = () => ({
   type: INPUT_INTERACTION,
 });
 
-const changeInput = (bonus) => ({
+const changeInput = (nr) => ({
   type: INPUT_CHANGE,
-  value: bonus,
+  value: nr,
 });
 
 
@@ -60,8 +65,8 @@ const PersonalNumberInput = ({
 );
 
 const mapStateToProps = (state, ownProps) => ({
-  bonus: state.pn.nr,
-  valid: /^[\d]{11,11}$/.test(state.pn.nr),
+  nr: state.pn.nr,
+  valid: state.pn.valid,
   showValidation: state.pn.interactedWith &&
     state.pn.nr &&
     state.pn.nr.length > 0,
