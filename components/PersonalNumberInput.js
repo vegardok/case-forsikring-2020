@@ -62,7 +62,9 @@ const PersonalNumberInput = ({
 const mapStateToProps = (state, ownProps) => ({
   bonus: state.pn.nr,
   valid: /^[\d]{11,11}$/.test(state.pn.nr),
-  showValidation: state.pn.interactedWith && state.pn.nr.length > 0,
+  showValidation: state.pn.interactedWith &&
+    state.pn.nr &&
+    state.pn.nr.length > 0,
 });
 
 const mapDispatchToProps = {
