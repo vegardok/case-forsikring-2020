@@ -33,7 +33,7 @@ const changeInput = (bonus) => ({
 });
 
 
-// TODO: client side validation
+// TODO: proper server side validation
 const PersonalNumberInput = ({
   nr,
   changeInput,
@@ -47,7 +47,7 @@ const PersonalNumberInput = ({
         Fødselsnummer
         <input
           className={['input',
-                      showValidation &&
+            showValidation &&
                       (valid ? 'is-success' : 'is-danger')].join(' ')}
           onChange={(e) => changeInput(e.target.value)}
           onBlur={() => toggleInputInteraction()}
