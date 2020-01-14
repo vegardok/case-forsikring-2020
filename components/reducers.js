@@ -1,6 +1,9 @@
 import {combineReducers} from 'redux';
-import {reducer as regNrReducer} from './RegNrInput';
+import {reducer as regNr} from './RegNrInput';
+import {reducer as bonus} from './BonusSelector';
+
 
 export default combineReducers({
-  regNr: regNrReducer,
+  regNr,
+  bonus,
 });
